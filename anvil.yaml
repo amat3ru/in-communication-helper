@@ -6,8 +6,24 @@ runtime_options:
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
   version: 2
+secrets:
+  ODOO_API_KEY:
+    type: secret
+    value: {UANCJDGXLXRJBH6O: VQsN4+gBz8k1tt3OTN4LUa7yUihiTJ43C5mkW65taOOXkm6F55vh8vO3lgexZOcxSQC0I6m0Z8zCN9gDrEq8D8QWy8GMYvrnmdeZsFJpzpgNwVHi7h8ViKXFpJwK602k7xuzKis5u1+YEYywQ2fFnMxnSngCqPcKQ6dmxFDkmi5PAvH2mKGH}
+  ODOO_CAMPAIGNS:
+    type: secret
+    value: {UANCJDGXLXRJBH6O: nmEPXEMJzN2cQ1ZxdhzMJPdmrY7sQMucrk20N3g4NW9DIkUT1WoZigt+mGWaULWYMHCJJqeixgKul9lmwuzQOqtGqducKHibVsFK1BqqlpK5ZmgxIxFmfqFSH8iRjLhPMrGN5LIQrPTqjRTAgWWx}
+  ODOO_DB:
+    type: secret
+    value: {UANCJDGXLXRJBH6O: XUaAHxcSoWcS45aND86ztd6MYynSaEvPT8/SXjpBIViTj6TAchbdPGr/0PBljeiTDqMOTppQdktexlHIMWi0EwNL8Emhi0mxl1pYTSuqmujXKebz2TuLopnpSRqW7CRE5vm0jfYKg7rFDwk=}
+  ODOO_URL:
+    type: secret
+    value: {UANCJDGXLXRJBH6O: lj4xKER8Za7Fqmprt48bmgkZnpcwflJg15cWHaEVv/wahtQJeu6VcXvD7bH2p2/ekLdo+tKabkhYKmzubo4SWjpRASFlkrGMio5fvNNjlXmLAlCrWOAWYya7a/jX7OTXGHIecZ84rPpIe0v6R7kiNwz87pIQ6eAYwHCDkCZu}
 services:
 - client_config: {}
   server_config: {}
   source: /runtime/services/tables.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/secrets.yml
 startup_form: Form1
