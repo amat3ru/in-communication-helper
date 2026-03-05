@@ -1,6 +1,7 @@
 allow_embedding: false
-name: In_communication_helper
-package_name: In_communication_helper
+metadata: {title: odoo_in_communication_helper}
+name: odoo_in_communication_helper
+package_name: odoo_in_communication_helper
 runtime_options:
   client_version: '3'
   server_spec: {base: python310-minimal}
